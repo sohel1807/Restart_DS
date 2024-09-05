@@ -1,3 +1,4 @@
+#Encoding and decoding of given string
 print("1)Encode\n2)Decode")
 n=int(input("Enter your option from (1,2):-"))
 if n==1:
