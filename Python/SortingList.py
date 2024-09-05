@@ -1,3 +1,4 @@
+#Simple sortin list code
 l=[]
 x=int(input("Enter input item number: "))
 for i in range(x):
