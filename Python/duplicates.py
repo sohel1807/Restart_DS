@@ -1,3 +1,4 @@
+#Finding Duplicates in array
 def duplicates(arr):
     seen=set()
     duplicates=set()
