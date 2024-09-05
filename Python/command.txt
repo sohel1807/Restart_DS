@@ -1,0 +1,6 @@
+python -m venv myenv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\myenv\Scripts\Activate
+deactivate 
+pip freeze > requirement.txt
+pip install -r requirement.txt
