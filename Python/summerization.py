@@ -1,6 +1,6 @@
 from modal import App, web_endpoint, Image
 from typing import Dict
-from transformers import pipeline, BartTokenizer
+from transformers import pipeline, DistilBertTokenizer
 
 # Define the image with necessary packages
 image = Image.debian_slim().pip_install(
@@ -10,7 +10,7 @@ image = Image.debian_slim().pip_install(
 )
 
 # Initialize the App
-app = App(name="summarization", image=image)
+app = App(name="distilgpt2-summarization", image=image)
 
 # Function to summarize text
 @app.function()
@@ -18,14 +18,14 @@ app = App(name="summarization", image=image)
 def summarize_text(requestData: Dict):
     # Extract data from request
     text = requestData.get("text", "")
-    model_name = 'facebook/bart-small'  # Use the BART Small model
-    max_input_tokens = 512  # Adjust this value based on the model's token limit
+    model_name = 'distilgpt2'
+    max_input_tokens = 512
     summary_max_length = 150
     summary_min_length = 50
 
     # Initialize summarization pipeline and tokenizer
-    tokenizer = BartTokenizer.from_pretrained(model_name)
-    summarizer = pipeline("summarization", model=model_name, tokenizer=tokenizer)
+    tokenizer = DistilBertTokenizer.from_pretrained(model_name)
+    summarizer = pipeline("text-generation", model=model_name, tokenizer=tokenizer)
 
     # Function to truncate text to fit within max_input_tokens
     def truncate_text(text, max_tokens):
@@ -38,8 +38,8 @@ def summarize_text(requestData: Dict):
 
     # Perform summarization
     try:
-        summary = summarizer(truncated_text, max_length=summary_max_length, min_length=summary_min_length, do_sample=False)
-        return {"summary": summary[0]['summary_text']}
+        summary = summarizer(truncated_text, max_length=summary_max_length, min_length=summary_min_length, do_sample=True)
+        return {"summary": summary[0]['generated_text']}
     except Exception as e:
         return {"error": str(e)}
 
