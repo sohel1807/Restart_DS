@@ -1,6 +1,6 @@
 from modal import App, web_endpoint, Image
 from typing import Dict
-from transformers import pipeline, DistilBertTokenizer
+from transformers import pipeline, GPT2Tokenizer
 
 # Define the image with necessary packages
 image = Image.debian_slim().pip_install(
@@ -10,7 +10,7 @@ image = Image.debian_slim().pip_install(
 )
 
 # Initialize the App
-app = App(name="distilgpt2-summarization", image=image)
+app = App(name="summarization", image=image)
 
 # Function to summarize text
 @app.function()
@@ -18,13 +18,13 @@ app = App(name="distilgpt2-summarization", image=image)
 def summarize_text(requestData: Dict):
     # Extract data from request
     text = requestData.get("text", "")
-    model_name = 'distilgpt2'
-    max_input_tokens = 512
+    model_name = 'distilgpt2'  # Use the DistilGPT-2 model
+    max_input_tokens = 512  # Adjust this value based on the model's token limit
     summary_max_length = 150
     summary_min_length = 50
 
     # Initialize summarization pipeline and tokenizer
-    tokenizer = DistilBertTokenizer.from_pretrained(model_name)
+    tokenizer = GPT2Tokenizer.from_pretrained(model_name)
     summarizer = pipeline("text-generation", model=model_name, tokenizer=tokenizer)
 
     # Function to truncate text to fit within max_input_tokens
@@ -42,4 +42,3 @@ def summarize_text(requestData: Dict):
         return {"summary": summary[0]['generated_text']}
     except Exception as e:
         return {"error": str(e)}
-
