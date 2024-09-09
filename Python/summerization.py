@@ -41,7 +41,7 @@ class SummarizerModel:
         summary_min_length = 30
 
         def process_summary(text):
-        # Remove duplicate and make first letter capital
+        # Remove consecutive duplicate and make first letter capital
             text = re.sub(r'\b(\w+)( \1\b)', '', text).strip()
             if text:
                 text = text[0].upper() + text[1:]
