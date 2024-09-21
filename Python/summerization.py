@@ -1,3 +1,4 @@
+# modal cloud use
 from modal import App, build, enter, method, web_endpoint, Image
 from typing import Dict
 import modal
@@ -30,6 +31,7 @@ class SummarizerModel:
     def initialize(self):
         # Initialize model 
         from transformers import pipeline, T5TokenizerFast
+        # t5's small model used for summerization 
         self.model_name = 't5-small'
         self.tokenizer = T5TokenizerFast.from_pretrained(self.model_name, legacy=False)
         self.summarizer = pipeline("summarization", model=self.model_name, tokenizer=self.tokenizer)
