@@ -1,1 +1,99 @@
+1. Descriptive Statistics
 
+Mean, Median, Mode: Measures of central tendency to describe the distribution of data.
+
+Variance and Standard Deviation: Measures of data dispersion.
+
+Skewness and Kurtosis: Measures to understand the shape of data distribution.
+
+Percentiles and Quartiles: Useful for understanding the spread and distribution in data.
+
+
+2. Probability Theory
+
+Basic Probability: Understanding random events and likelihoods.
+
+Conditional Probability: Important for Bayes' Theorem and understanding how probabilities change with new information.
+
+Probability Distributions:
+
+Normal Distribution: Commonly used in statistical analysis and assumptions for algorithms.
+
+Binomial Distribution: For binary outcomes (e.g., success/failure).
+
+Poisson Distribution: For rare events over time.
+
+
+
+3. Hypothesis Testing
+
+Null and Alternative Hypotheses: Fundamental for testing assumptions.
+
+p-value: Determines the significance of results.
+
+t-test and z-test: For comparing means of datasets.
+
+Chi-square test: For categorical data.
+
+ANOVA (Analysis of Variance): Used to compare the means across multiple groups.
+
+
+4. Correlation and Causality
+
+Correlation Coefficient (Pearson, Spearman): Measures the strength of relationship between variables.
+
+Covariance: Measures how two variables change together.
+
+Causality vs Correlation: Differentiating between two concepts is crucial in building ML models and avoiding false conclusions.
+
+
+5. Regression Analysis
+
+Linear Regression: Basic technique to model relationships between variables.
+
+Multivariate Regression: Extends linear regression to multiple variables.
+
+R-squared: Measures the goodness-of-fit for a model.
+
+Regularization: Concepts like Ridge and Lasso for preventing overfitting in regression models.
+
+
+6. Bayesian Statistics
+
+Bayes' Theorem: Important for probabilistic modeling and updating beliefs with new evidence.
+
+Prior, Likelihood, Posterior: Core components of Bayesian inference.
+
+
+7. Sampling and Estimation
+
+Random Sampling: Essential to create unbiased datasets.
+
+Sampling Distribution: Distribution of a statistic (e.g., the mean) across many samples.
+
+Central Limit Theorem: The foundation for making inferences about population parameters from sample data.
+
+Point Estimates vs Confidence Intervals: Single value vs range of values for estimating population parameters.
+
+
+8. Statistical Inference
+
+Confidence Intervals: Range of values that likely contain the true population parameter.
+
+Significance Levels: Typically set at 0.05, indicating the probability of rejecting a true null hypothesis.
+
+Type I and Type II Errors: False positives and false negatives in hypothesis testing.
+
+
+9. Resampling Methods
+
+Bootstrapping: Resampling method to estimate statistics on a population by sampling a dataset with replacement.
+
+Cross-Validation: Used to evaluate ML models, especially for assessing their generalizability.
+
+
+10. Dimensionality Reduction
+
+PCA (Principal Component Analysis): Used to reduce the dimensionality of data while preserving variance.
+
+SVD (Singular Value Decomposition): A matrix factorization technique for dimensionality reduction and data compression.
