@@ -60,6 +60,7 @@ Key Point:
 Ridge regression never reduces coefficients to zero, unlike Lasso, meaning it retains all features but shrinks the coefficients.
 
 
+
 ---
 
 Impact of the Regularization Parameter 
@@ -71,7 +72,9 @@ Low  (close to 0): Behaves like standard linear regression, with minimal regular
 
 High  (close to infinity): Increases the penalty on large coefficients, potentially leading to underfitting, where the model becomes too simple and loses its predictive power.
 
-
+1. Coefficients shrink towards zero due to  regularization.
+2. As alpha or lambda increases, regularization increases, reducing model complexity.
+3. Higher feature values are penalized more, leading to more shrinkage.
 
 ---
 
