@@ -7,6 +7,9 @@ Practice of Data science related stack.
     - Linear Regression
     - Logistic Regression
     - Gradient Descent
+        - Batch
+        - Stochastic
+        - MiniBatch
     - Support vector machine(svm)
 3) Python
 
