@@ -11,5 +11,8 @@ Practice of Data science related stack.
         - Stochastic
         - MiniBatch
     - Support vector machine(svm)
+3) DL
+    - Pytorch start
+
 3) Python
 
