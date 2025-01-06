@@ -12,7 +12,8 @@ Practice of Data science related stack.
         - MiniBatch
     - Support vector machine(svm)
 3) DL
-    - Pytorch Tensor
+    - Pytorch
+        - Tensor
 
 3) Python
 
