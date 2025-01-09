@@ -21,8 +21,8 @@ def calculate_cosine_similarity(image1_path, image2_path):
     return img1_vector, img2_vector, similarity[0][0]
 
 # Example usage
-image1_path = 'cricket5.jpg'
-image2_path = 'cricket6.jpg'
+image1_path = 'cricket1.jpg'
+image2_path = 'cricket2.jpg'
 
 # Get vectors and similarity
 img1_vector, img2_vector, similarity = calculate_cosine_similarity(image1_path, image2_path)
