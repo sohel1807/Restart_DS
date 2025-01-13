@@ -13,5 +13,8 @@
    The gradients calculated during backpropagation are used to update the network parameters using an optimization algorithm (e.g., Gradient Descent, Adam). The update is typically performed as:
    #### Parameter = Parameter - Learning Rate * Gradient
    
+## What is Autograd and Why it is used?
+We use autograd because it simplifies and automates the process of computing gradients for neural network training. Here's why it's important and useful:
 
-This process is repeated iteratively over multiple epochs until the model achieves satisfactory performance.
+   - Autograd calculates derivatives (gradients) automatically using the chain rule.
+   - It eliminates the need to manually derive and implement gradient computations, which can be tedious and error-prone, especially for complex models.
