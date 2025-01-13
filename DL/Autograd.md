@@ -1,4 +1,4 @@
-#### Training Neural Network Stpes requires:-
+### Training Neural Network Stpes requires:-
 
 1. **Forward Pass**:  
    Input data is passed through the network, layer by layer, to compute the predictions (output). This step involves matrix multiplications and applying activation functions to the intermediate layers.
@@ -11,8 +11,7 @@
 
 4. **Update Gradients**:  
    The gradients calculated during backpropagation are used to update the network parameters using an optimization algorithm (e.g., Gradient Descent, Adam). The update is typically performed as:
-   \[
-   \text{Parameter} = \text{Parameter} - \text{Learning Rate} \times \text{Gradient}
-   \]
+   #### Parameter = Parameter - Learning Rate * Gradient
+   
 
 This process is repeated iteratively over multiple epochs until the model achieves satisfactory performance.
