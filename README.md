@@ -14,6 +14,6 @@ Practice of Data science related stack.
 3) DL
     - Pytorch
         - Tensor
-
+        - Autograd
 3) Python
 
