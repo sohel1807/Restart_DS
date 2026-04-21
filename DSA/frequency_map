@@ -1,0 +1,19 @@
+# Frequency map method 1
+
+list=[10,5,2,5,3,8,9,3,6,3,5]
+freq_map={}
+for i in range(len(list)):
+    if list[i] in freq_map:
+        freq_map[list[i]]+=1
+    else:
+        freq_map[list[i]]=1   
+print(freq_map)
+
+# Frequency map method 2
+hash_map={}
+for i in range(len(list)):
+    hash_map[list[i]]=hash_map.get(list[i],0)+1
+    # hash_map .get using for searching 
+    # this number present or not if not return 0
+    # OtherWise that keys value
+print(hash_map)    

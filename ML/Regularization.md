@@ -13,7 +13,7 @@ Elastic Net (Combination of L2 and L1)
 
 
 Purpose:
-Regularization helps solve the problem of overfitting by adding penalties to the model coefficients, reducing their magnitude.
+  helps solve the problem of overfitting by adding penalties to the model coefficients, reducing their magnitude.
 
 
 ---
@@ -68,7 +68,7 @@ Impact of the Regularization Parameter
 Range:
  can range from 0 to infinity.
 
-Low  (close to 0): Behaves like standard linear regression, with minimal regularization. The model fits the training data more closely.
+Low  (close to 0): Behaves like standard linear regression, with minimal regularization. The model fits the training data more closely. 
 
 High  (close to infinity): Increases the penalty on large coefficients, potentially leading to underfitting, where the model becomes too simple and loses its predictive power.
 
