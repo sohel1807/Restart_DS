@@ -47,15 +47,22 @@
 # print(first_duplicate([1,2,3,4,5,3]))  
 
 
-def count_char(s, char):
-    # Just count how many times char appears in s
-    count = 0
-    # Write simple loop here
-    for c in s:
-        if char==c:
-            count+=1
+# def count_char(s, char):
+#     # Just count how many times char appears in s
+#     count = 0
+#     # Write simple loop here
+#     for c in s:
+#         if char==c:
+#             count+=1
     
-    return count
+#     return count
 
-# Test
-print(count_char("hello", "l")) 
+# # Test
+# print(count_char("hello", "l")) 
+
+
+
+## cofde for lonest substrin
+from collections import Counter
+a='eertybvfd'
+print(Counter(a))
