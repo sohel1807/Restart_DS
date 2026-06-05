@@ -19,11 +19,11 @@ Practice of Data science related stack.
         - Tensor
         - Autograd
     - Tensorflow
-          - ANN
-              - DropOut
-              - Optimizer
-              - BatchNorm
-              - Activation Function
-          - CNN
+      - ANN
+        - DropOut
+        - Optimizer
+        - BatchNorm
+        - Activation Function
+      - CNN
 3) Python
 
