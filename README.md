@@ -11,9 +11,19 @@ Practice of Data science related stack.
         - Stochastic
         - MiniBatch
     - Support vector machine(svm)
+    - Random Forest
+    - Decision Tree
+    - Ensemble 
 3) DL
     - Pytorch
         - Tensor
         - Autograd
+    - Tensorflow
+          - ANN
+              - DropOut
+              - Optimizer
+              - BatchNorm
+              - Activation Function
+          - CNN
 3) Python
 
