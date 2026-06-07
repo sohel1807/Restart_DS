@@ -27,5 +27,6 @@ Practice of Data science related stack.
       - CNN
         - Convolutional Layer
         - Padding
+        - Pooling
 3) Python
 
