@@ -25,5 +25,7 @@ Practice of Data science related stack.
         - BatchNorm
         - Activation Function
       - CNN
+        - Convolutional Layer
+        - Padding
 3) Python
 
