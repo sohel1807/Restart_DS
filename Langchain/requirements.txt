@@ -2,6 +2,7 @@
 langchain
 langchain-core
 langchain-groq
+langchain-community
 
 # OpenAI Integration
 langchain-openai
