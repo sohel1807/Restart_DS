@@ -3,6 +3,7 @@ langchain
 langchain-core
 langchain-groq
 langchain-community
+duckduckgo-search
 
 # OpenAI Integration
 langchain-openai
