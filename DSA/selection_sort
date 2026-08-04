@@ -1,0 +1,23 @@
+def selection_sort(list):
+    n=len(list)
+    for i in range(0,n):
+        min_index=i
+        for j in range(i+1,n):
+            if list[j]<list[min_index]:
+                min_index=j
+        list[min_index],list[i]=list[i],list[min_index]
+    return list
+
+print(selection_sort([5,2,6,8,1,0,3,9,4])) 
+
+def reverse_selection_sort(list):
+    n=len(list)
+    for i in range(0,n):
+        max_index=i
+        for j in range(i+1,n):
+            if list[j]>list[max_index]:
+                max_index=j
+        list[max_index],list[i]=list[i],list[max_index]
+    return list
+           
+print(reverse_selection_sort([5,2,6,8,1,0,3,9,4]))         

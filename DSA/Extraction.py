@@ -26,16 +26,22 @@ while(num>0):
     # time complexity (O(log10(n)))
 print(sum)    
 
-# Armstrong Digit 
-num=1634
-len_num=len(str(num))
-total=0
-while(num>0):
-    last_digit=num%10
-    total+=last_digit**len_num
-    num=num//10
+# Armstrong Digit
+num = 1634
+len_num = len(str(num))
+total = 0
+original_num = num
+
+while num > 0:
+    last_digit = num % 10
+    total += last_digit ** len_num
+    num //= 10
     # time complexity (O(log10(n)))
-print(total)   
+
+if total == original_num:
+    print(f"{original_num} is an Armstrong number")
+else:
+    print(f"{original_num} is not an Armstrong number")
 
 # Finding all factors Of number
 num=25

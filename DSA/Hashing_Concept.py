@@ -8,7 +8,7 @@ hash_list=[0]*11
 
 for num in n:
    hash_list[num]+=1 
-
+print(hash_list)
 for num in m:
    dict[num]=hash_list[num]
    # Time Complexity O(M+N)

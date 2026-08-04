@@ -1,0 +1,25 @@
+def bubble_sort(nums):
+    n=len(nums)
+    print(n)
+    for i in range((n-2),-1,-1):
+        for j in range(0,i+1):
+            if nums[j]>nums[j+1]:
+                nums[j],nums[j+1]=nums[j+1],nums[j]
+    
+    return nums
+
+print(bubble_sort([3,5,1,7,2,9,0,6])) 
+
+
+def reverse_bubble_sort(nums):
+    n=len(nums)
+    print(n)
+    for i in range((n-2),-1,-1):
+        for j in range(0,i+1):
+            if nums[j]<nums[j+1]:
+                nums[j],nums[j+1]=nums[j+1],nums[j]
+    
+    return nums
+
+print(reverse_bubble_sort([3,5,1,7,2,9,0,6]))            
+   #Adjacent swaps  

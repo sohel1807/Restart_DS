@@ -74,6 +74,6 @@ def reverse(list, left=0, right=None):
         return list
     list[left],list[right]=list[right],list[left]
     
-    reverse(list, left+1, right-1)
+    return reverse(list, left+1, right-1)
 
 print(reverse(list))    
